@@ -1,0 +1,39 @@
+﻿
+@page "/characters"
+@using Microsoft.Extensions.Logging
+@inject HttpClient Http
+
+@inject ILogger<CharacterListComponent> Logger
+
+<h3>People</h3>
+
+@if (Characters == null)
+{
+<p><em>Loading...</em></p>
+}
+else
+{
+<table class="table" >
+    <thead>
+        <tr>
+            <th>Name</th>            
+        </tr>    
+    </thead>
+    <tbody>
+        @foreach(var character in Characters)
+                {
+            var link = $"character/{character.Name}";
+        <tr>
+            <td><NavLink href="@link">@character.Name</NavLink></td>            
+        </tr>
+                }
+    </tbody>
+</table>
+
+
+}
+
+
+
+
+

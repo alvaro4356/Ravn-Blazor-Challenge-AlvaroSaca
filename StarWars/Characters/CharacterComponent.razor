@@ -1,0 +1,48 @@
+﻿
+@using Microsoft.Extensions.Logging
+@page "/character/{name}" 
+@inject HttpClient Http
+@inject ILogger<CharacterComponent> Logger             
+
+
+@if (CharacterInfo == null)
+{
+                <p><em>Loading...</em></p>
+}
+
+else
+{ 
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">@CharacterInfo.Name</h5>
+        <p> <strong>General Information</strong></p>
+        <p></p>
+        <p class="card-text">
+            <span><strong>Birth date:</strong></span>
+            @CharacterInfo.BirthYear
+        </p>
+        <p class="card-text">
+            <span><strong>Gender:</strong></span>
+            @CharacterInfo.Gender
+        </p>
+        <p class="card-text">
+            <span><strong>Eye Color:</strong></span>
+            @CharacterInfo.EyeColor
+        </p>
+        <p class="card-text">
+            <span><strong>Hair Color:</strong></span>
+            @CharacterInfo.HairColor
+        </p>
+        <p class="card-text">
+            <span><strong>Height:</strong></span>
+            @CharacterInfo.Height
+        </p>
+
+        <p class="card-text">
+            <span><strong>Skin Color:</strong></span>
+            @CharacterInfo.SkinColor
+        </p>
+    </div>
+</div>
+
+}
