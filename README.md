@@ -21,13 +21,22 @@ The Project consist in create a web app, which extract data from the Star Wars R
 later show it in several User Interfaces.
 
 ## Technologies used:
-### Frontend:
+#### Frontend:
 - Json, Html,Css,BootStrap
-### FrameWork: 
+#### FrameWork: 
 - .Net Blazor
-### IDE:
+#### IDE:
 - Microsoft Visual Studio 2019 
-### Language:
+#### Language:
 - C#
 
+
+## Evidence:
+The evidences on this project are located in the folder "Evidence".</br> 
+The following captures are available:
+- Evidence01.png : Contains evidence for the Main Menu.
+- Evidence02.png : Contains evidence for loading spinner when list people 
+- Evidence03.png : Contains evidence for loading spinner when some person is selected.
+- Evidence04.png : Contains evidence for detail people Menu.
+- Evidence05.png : Contains evidence for all solution distribution.
 
